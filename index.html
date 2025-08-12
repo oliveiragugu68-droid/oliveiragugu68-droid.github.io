@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Presente Jinx & Ekko</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Special+Elite&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Special Elite', cursive;
+      color: #f2f2f2;
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.4;
+      animation: fade 20s ease-in-out infinite alternate;
+    }
+    @keyframes fade {
+      0% { opacity: 0.2; }
+      50% { opacity: 0.5; }
+      100% { opacity: 0.2; }
+    }
+
+    /* Fundos dos três momentos */
+    #bg1 { background-image: url('https://images.openai.com/thumbnails/url/RE0-dnicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw42NQyOsgwr8fMu80xMLstwyjZLszANMk-MiDDISgwOrjAuN_PTLdQN140PNYowLDdM9javdInwdPIzLlcrBgDzHyhu'); }
+    #bg2 { background-image: url('https://images.openai.com/thumbnails/url/VXir53icu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4OsrfIN0ypKvMONE4tcDc2CQ8tKDR11Q31L8l0jrC0yPTKNcmL8PCIzAk01w1yKjT3iwwPCsi10C1XKwYAr7ooLA'); }
+    #bg3 { background-image: url('https://images.openai.com/thumbnails/url/99roA3icu1mSUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4yrnROS9RNSzd1LtD1jjQOMnd3T0sPSq6K8HQtMLcMDtI10q0IcHIu86sIyM7ydU1yDXEJCTUyjSjMTVcrBgDt1ii1'); }
+
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #ff33cc;
+      text-shadow: 0 0 8px #ff33cc, 0 0 16px #00e6e6;
+      animation: glow 3s ease-in-out infinite alternate;
+      margin-bottom: 20px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 6px #ff33cc; }
+      to   { text-shadow: 0 0 20px #00e6e6; }
+    }
+
+    .video-box {
+      width: 80%;
+      max-width: 700px;
+      border: 4px solid #00e6e6;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      padding: 60px;
+      color: #888;
+    }
+
+    .message {
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border: 2px solid #ff33cc;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div id="bg1" class="bg"></div>
+  <div id="bg2" class="bg"></div>
+  <div id="bg3" class="bg"></div>
+
+  <div class="container">
+    <h1>Presente Jinx & Ekko</h1>
+
+    <div class="video-box">
+      <!-- Quando tiver o vídeo pronto, insira aqui -->
+      Vídeo será inserido aqui
+    </div>
+
+    <div class="message">
+      <!-- A mensagem especial será inserida aqui -->
+      Sua mensagem especial vai aparecer aqui.
+    </div>
+  </div>
+</body>
+</html>
