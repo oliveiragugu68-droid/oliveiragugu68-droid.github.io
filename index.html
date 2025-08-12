@@ -17,14 +17,27 @@
       background: #000;
     }
 
-    .bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.4; animation: fade 20s ease-in-out infinite alternate; }
-    @keyframes fade { 0% { opacity: 0.2; } 50% { opacity: 0.5; } 100% { opacity: 0.2; } }
+    /* Imagens de fundo com transição suave */
+    .bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.4;
+      animation: fade 20s ease-in-out infinite alternate;
+    }
+    @keyframes fade {
+      0% { opacity: 0.2; }
+      50% { opacity: 0.5; }
+      100% { opacity: 0.2; }
+    }
 
-    /* Fundos das cenas escolhidas */
-    #bg1 { background-image: url('https://preview.redd.it/lore-spoilers-ekko-x-powder-jinx-4k-edited-wallpaper-ba%C5%9Fka-v0-xj8s00ke523e1.jpeg?auto=webp&s=2a97742e16c65c2dcf601e06006b7319315b0cb0'); }
-    #bg2 { background-image: url('https://i.pinimg.com/736x/a5/ea/41/a5ea41c1c869969e994d01f37c2489e7.jpg'); }
-    #bg3 { background-image: url('https://images.steamusercontent.com/ugc/6287472041258132/7B0FA11FBF34E5D7141BDE3772765A88E4DA6234/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false'); }
+    /* Fundos: frente a frente, dançando, varanda */
+    #bg1 { background-image: url('https://wall.alphacoders.com/big.php?i=1386744'); }
+    #bg2 { background-image: url('https://wall.alphacoders.com/big.php?i=1388435'); }
+    #bg3 { background-image: url('https://wall.alphacoders.com/big.php?i=1386744'); } /* Substitua se tiver outra */
 
+    /* Camada de escurecimento */
     body::before {
       content: '';
       position: absolute;
@@ -53,7 +66,10 @@
       animation: glow 3s ease-in-out infinite alternate;
       margin-bottom: 20px;
     }
-    @keyframes glow { from { text-shadow: 0 0 6px #ff33cc; } to { text-shadow: 0 0 20px #00e6e6; } }
+    @keyframes glow {
+      from { text-shadow: 0 0 6px #ff33cc; }
+      to   { text-shadow: 0 0 20px #00e6e6; }
+    }
 
     .video-box {
       width: 80%;
@@ -86,12 +102,12 @@
     <h1>Presente Jinx & Ekko</h1>
 
     <div class="video-box">
-      <!-- Quando tiver o vídeo pronto, substitui por <video> ou iframe -->
+      <!-- Adicione depois seu vídeo aqui -->
       Vídeo será inserido aqui
     </div>
 
     <div class="message">
-      <!-- A mensagem especial será inserida aqui -->
+      <!-- A mensagem especial aparecerá aqui -->
       Sua mensagem especial vai aparecer aqui.
     </div>
   </div>
